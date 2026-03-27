@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Baraholka Cool</title>
+<meta name="description" content="Get in touch with the Baraholka Cool team. Use our contact form, email, or phone for questions and feedback.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://baraholka-cool.net/contact">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo"><div class="logo-mark">B</div><div class="logo-text">Baraholka <span>Cool</span></div></a>
+    <div class="navbar__search"><span class="si">🔍</span><input type="search" placeholder="Search listings..." aria-label="Search"></div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="navbar__nav">
+      <a href="index.html">Home</a><a href="categories.html">Categories</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="post-listing.html" class="nav-post">+ Post Ad</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero" style="padding:52px 0;"><div class="container"><span class="eyebrow" style="color:var(--gold);">Get in Touch</span><h1>Contact Us</h1><p>Have a question, problem, or idea? Write to us — we respond within one business day.</p></div></div>
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      <main>
+        <h2 style="margin-bottom:22px;font-size:1.3rem;">Send us a message</h2>
+        <form id="main-contact-form" novalidate>
+          <div class="form-group"><label class="form-label" for="cn">Your Name *</label><input type="text" id="cn" class="form-input" placeholder="John Smith" required></div>
+          <div class="form-group"><label class="form-label" for="ce">Email *</label><input type="email" id="ce" class="form-input" placeholder="john@example.com" required></div>
+          <div class="form-group"><label class="form-label" for="cs">Subject</label>
+            <select id="cs" class="form-select"><option value="">Choose a subject</option><option>General question</option><option>Listing issue</option><option>Report abuse</option><option>Partnership / Advertising</option><option>Technical problem</option><option>Other</option></select>
+          </div>
+          <div class="form-group"><label class="form-label" for="cm">Message *</label><textarea id="cm" class="form-textarea" placeholder="Describe your question or suggestion..." required style="min-height:140px;"></textarea></div>
+          <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+          <p class="form-hint" style="margin-top:12px;">* Required fields. We respond within 1 business day.</p>
+        </form>
+      </main>
+      <aside>
+        <h2 style="margin-bottom:22px;font-size:1.3rem;">Our contacts</h2>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div style="padding:20px;background:var(--paper);border-radius:var(--radius);border:1.5px solid var(--border);">
+            <div style="font-size:1.5rem;margin-bottom:10px;">📧</div>
+            <h3 style="font-size:1rem;margin-bottom:6px;">Email</h3>
+            <a href="mailto:hello@baraholka-cool.net" style="color:var(--rust);font-size:.92rem;">hello@baraholka-cool.net</a>
+            <p style="font-size:.82rem;color:var(--text-muted);margin-top:4px;">General questions and suggestions</p>
+          </div>
+          <div style="padding:20px;background:var(--paper);border-radius:var(--radius);border:1.5px solid var(--border);">
+            <div style="font-size:1.5rem;margin-bottom:10px;">⚠️</div>
+            <h3 style="font-size:1rem;margin-bottom:6px;">Report abuse</h3>
+            <p style="font-size:.85rem;color:var(--text-muted);">Found a suspicious listing or scam? Email <a href="mailto:abuse@baraholka-cool.net" style="color:var(--rust);">abuse@baraholka-cool.net</a>. We respond within 4 hours.</p>
+          </div>
+          <div style="padding:20px;background:var(--paper);border-radius:var(--radius);border:1.5px solid var(--border);">
+            <div style="font-size:1.5rem;margin-bottom:10px;">📍</div>
+            <h3 style="font-size:1rem;margin-bottom:6px;">Office</h3>
+            <p style="font-size:.9rem;">350 Fifth Avenue, Suite 4100<br>New York, NY 10118</p>
+            <p style="font-size:.82rem;color:var(--text-muted);margin-top:4px;">Mon–Fri, 9am – 6pm ET</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><div class="footer__logo"><div class="logo-mark">B</div><div class="logo-text">Baraholka <span>Cool</span></div></div><p>Free classifieds marketplace — buy and sell anything near you. No fees, no hassle.</p></div>
+      <div><h5>Categories</h5><ul class="footer-links"><li><a href="cat-electronics.html">Electronics</a></li><li><a href="cat-cars.html">Cars &amp; Vehicles</a></li><li><a href="cat-furniture.html">Furniture</a></li><li><a href="categories.html">All →</a></li></ul></div>
+      <div><h5>Site</h5><ul class="footer-links"><li><a href="post-listing.html">Post an Ad</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Legal</h5><ul class="footer-links"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2025 Baraholka Cool. All rights reserved.</span><span><a href="privacy-policy.html">Privacy</a> · <a href="terms.html">Terms</a></span></div>
+  </div>
+</footer>
+<button id="btt" aria-label="Back to top">↑</button>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

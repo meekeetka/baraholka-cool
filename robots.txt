@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /post-listing.html
+
+Sitemap: https://baraholka-cool.net/sitemap.xml

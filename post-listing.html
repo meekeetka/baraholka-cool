@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post a Free Ad — Baraholka Cool</title>
+<meta name="description" content="Post a free classified ad on Baraholka Cool. Sell your items in minutes — add a title, photos, price, and description. Free, fast, no sign-up required.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://baraholka-cool.net/post-ad">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo"><div class="logo-mark">B</div><div class="logo-text">Baraholka <span>Cool</span></div></a>
+    <div class="navbar__search"><span class="si">🔍</span><input type="search" placeholder="Search listings..." aria-label="Search"></div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="navbar__nav">
+      <a href="index.html">Home</a><a href="categories.html">Categories</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a href="post-listing.html" class="nav-post">+ Post Ad</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero" style="padding:48px 0;"><div class="container"><span class="eyebrow" style="color:var(--gold);">Sell Something</span><h1>Post Your Free Ad</h1><p>Fill in the form below and your listing will be live within minutes. Free forever — no hidden fees.</p></div></div>
+<section class="section">
+  <div class="container" style="max-width:680px;">
+    <div style="background:var(--paper);border:1.5px solid var(--border);border-radius:var(--radius);padding:32px;">
+      <form id="post-form" novalidate>
+        <div class="form-group"><label class="form-label" for="pt">Title *</label><input type="text" id="pt" class="form-input" placeholder="e.g. iPhone 14 Pro 256GB Deep Purple — great condition" required><p class="form-hint">Be specific — good titles get 3× more views.</p></div>
+        <div class="form-group"><label class="form-label" for="pcat">Category *</label>
+          <select id="pcat" class="form-select" required>
+            <option value="">Choose a category</option>
+            <option>Electronics</option><option>Cars &amp; Vehicles</option><option>Furniture</option>
+            <option>Clothing &amp; Shoes</option><option>Kids &amp; Baby</option><option>Sports &amp; Hobbies</option>
+            <option>Home &amp; Garden</option><option>Appliances</option><option>Books &amp; Media</option>
+            <option>Beauty &amp; Health</option><option>Other</option>
+          </select>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="form-group"><label class="form-label" for="pp">Price ($) *</label><input type="number" id="pp" class="form-input" placeholder="e.g. 150" required></div>
+          <div class="form-group"><label class="form-label" for="pcond">Condition *</label>
+            <select id="pcond" class="form-select" required>
+              <option value="">Select condition</option>
+              <option>New</option><option>Like new</option><option>Good</option><option>Fair</option><option>For parts</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label class="form-label" for="pdesc">Description *</label><textarea id="pdesc" class="form-textarea" placeholder="Describe your item: brand, model, age, condition, what's included, reason for selling..." required style="min-height:160px;"></textarea><p class="form-hint">Longer, honest descriptions sell faster. Mention any defects — buyers appreciate it.</p></div>
+        <div class="form-group"><label class="form-label" for="ploc">City / Location *</label><input type="text" id="ploc" class="form-input" placeholder="e.g. Brooklyn, NY" required></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="form-group"><label class="form-label" for="pname">Your Name *</label><input type="text" id="pname" class="form-input" placeholder="First name" required></div>
+          <div class="form-group"><label class="form-label" for="pcontact">Email or Phone *</label><input type="text" id="pcontact" class="form-input" placeholder="How buyers can reach you" required></div>
+        </div>
+        <div class="form-group"><label class="form-label" for="pphoto">Photos</label><input type="file" id="pphoto" class="form-input" accept="image/*" multiple style="padding:8px;"><p class="form-hint">Up to 8 photos. JPG or PNG. Listings with photos get 5× more responses.</p></div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:22px;">
+          <input type="checkbox" id="pagree" style="margin-top:4px;accent-color:var(--rust);" required>
+          <label for="pagree" style="font-size:.85rem;color:var(--text-muted);cursor:pointer;">I agree to the <a href="terms.html" style="color:var(--rust);">Terms of Use</a> and confirm that my listing does not contain prohibited content.</label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full" onclick="this.textContent='✅ Listing submitted!';this.disabled=true;event.preventDefault();window.showToast && showToast('Your listing has been submitted and will be live shortly!');">Post Ad for Free</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><div class="footer__logo"><div class="logo-mark">B</div><div class="logo-text">Baraholka <span>Cool</span></div></div><p>Free classifieds marketplace — buy and sell anything near you. No fees, no hassle.</p></div>
+      <div><h5>Categories</h5><ul class="footer-links"><li><a href="cat-electronics.html">Electronics</a></li><li><a href="cat-cars.html">Cars &amp; Vehicles</a></li><li><a href="cat-furniture.html">Furniture</a></li><li><a href="categories.html">All →</a></li></ul></div>
+      <div><h5>Site</h5><ul class="footer-links"><li><a href="post-listing.html">Post an Ad</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Legal</h5><ul class="footer-links"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2025 Baraholka Cool. All rights reserved.</span><span><a href="privacy-policy.html">Privacy</a> · <a href="terms.html">Terms</a></span></div>
+  </div>
+</footer>
+<button id="btt" aria-label="Back to top">↑</button>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
